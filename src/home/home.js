@@ -10,23 +10,23 @@ function Home() {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
-``
-    emailjs
-      .sendForm(
-        "/",
-        "/",
-        form.current,
-        "/-B"
-      )
-      .then(
-        (result) => {
-          alert("تم الارسال بنجاح,شكرا لتوصلك معنا ");
-        },
-        (error) => {
-          alert("فشلت العملية يرجى المحاولة مرة اخرى");
-        }
-      );
+//     e.preventDefault();
+// ``
+//     emailjs
+//       .sendForm(
+//         "/",
+//         "/",
+//         form.current,
+//         "/-B"
+//       )
+//       .then(
+//         (result) => {
+//           alert("تم الارسال بنجاح,شكرا لتوصلك معنا ");
+//         },
+//         (error) => {
+//           alert("فشلت العملية يرجى المحاولة مرة اخرى");
+//         }
+//       );
   };
 
   return (
