@@ -1,6 +1,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+#temp-logo{
+ color: var(--whiteColor); 
+ text-decoration: none;
+ font-size: 35px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -45,6 +52,15 @@ header {
   padding: 0 2rem;
   background-color: #61777f88;
   color: var(--whiteColor);
+}
+
+header button{
+  background-color: #00000000;
+  border: none;
+  color: var(--whiteColor);
+  font-size: 1rem;
+  margin: auto 2px;
+
 }
 
 #go-to-about {
@@ -344,6 +360,10 @@ footer {
   height: 30px;
 }
 
+.change-writing-dirction{
+  direction: ltr;
+}
+
 @media only screen and (max-width: 1024px) {
   header .nav-btn {
     display: block;
@@ -422,6 +442,20 @@ footer {
 }
 
 @media (max-width: 435px) {
+  .home-page {
+    background: url("/public/assets/images/home-background-mobile.png"), #f2f2f2;
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  .jumbotron{
+    padding: 100px 0px 0px 0px;
+    height: fit-content;
+  }
+
+  #about{
+    margin-top: 100px;
+  }
   #first-image {
     display: none;
   }
@@ -454,5 +488,6 @@ footer {
 
   .last-home-hotel p {
     font-size: 1rem;
+    line-height: 150%;
   }
 }
